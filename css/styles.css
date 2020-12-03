@@ -17,3 +17,8 @@ h1 {
 h3 {
 	color: #11999e;
 }
+
+#profile-pic {
+	border-radius: 50%;
+	height: 60%;
+}
