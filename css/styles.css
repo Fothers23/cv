@@ -1,6 +1,6 @@
 body {
 	background-color: #e4f9f5;
-	font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 hr {
@@ -13,10 +13,12 @@ hr {
 
 h1 {
 	color: #40514e;
+	font-family: 'Oswald', sans-serif;
 }
 
 h3 {
 	color: #11999e;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #profile-pic {
