@@ -1,130 +1,367 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Emily Fothergill</title>
-        <meta name="description" content="Emily Fothergill's CV is a website built by Emily Fothergill to display her CV.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Emily Fothergill</title>
+    <meta name="description" content="Emily Fothergill's CV is a website built by Emily Fothergill to display her CV.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="favicon.ico">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 
-    </head>
-    <body>
-    	<table cellspacing="20">
-    		<tr>
-    			<td>
-    				<img id="profile-pic" src="https://media-exp1.licdn.com/dms/image/C4D03AQGJoJgaUqBoMw/profile-displayphoto-shrink_400_400/0/1578779292700?e=1612396800&v=beta&t=BQYcAKQK97tPCVcb2qpwscuAsr-_s2Ndyihi2LjxqCE" alt="Emily's profile picture">
-    			</td>
-    			<td>
-    				<h1>Emily Fothergill</h1>
-        			<em>Head of UK Technical Support at <strong><a href="https://cliniconex.com/uk/">Cliniconex UK</a></strong></em>
-    			</td>
-    		</tr>
-    	</table>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Spartan:wght@200;400;700;900&display=swap" rel="stylesheet">
 
-        <hr>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
 
-        <h3>Experience</h3>
-        <table cellspacing="10">
-        	<thead>
-        		<tr>
-	        		<th>Date</th>
-	        		<th>Job title</th>
-	        		<th>Company</th>
-	        	</tr>
-        	</thead>
-        	<tbody>
-        		<tr>
-        			<td>August 2020 - Present</td>
-        			<td>Head of UK Technical Support</td>
-        			<td>Cliniconex UK</td>
-        		</tr>
-        		<tr>
-        			<td>Sept 2019 - Nov 2020</td>
-        			<td>Technical Lead</td>
-        			<td>The Alacrity Foundation (UK)</td>
-        		</tr>
-        		<tr>
-        			<td>Oct 2015 - Jan 2019</td>
-        			<td>Retail Operative</td>
-        			<td>Primark</td>
-        		</tr>
-        	</tbody>
-        	<tfoot>
-        		
-        	</tfoot>
-        </table>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <hr>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
 
-        <h3>Education</h3>
-        <ul>
-        	<li><strong>Swansea University</strong> (<em>2016 - 2019</em>) - BSc Computer Science - <strong>First Class Honours</strong></li>
-        	<li><strong>Shaw Academy</strong> (<em>2020</em>) - EQF Level 5 Graphic Design - <strong>Distinction</strong></li>
-        	<li><strong>St Julian's Comprehensive</strong> (<em>2009 - 2016</em>)
-        		<ul>
-        			<li>A Level Mathematics - <strong>C</strong></li>
-        			<li>A Level Psychology - <strong>C</strong></li>
-        			<li>A Level Geography - <strong>D</strong></li>
-        			<li>GCSE Mathematics - <strong>A*</strong></li>
-     				<li>GCSE English Literature - <strong>A</strong></li>
-     			</ul>
-        	</li>
-        </ul>
+</head>
+<body>
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <div class="blobby blob2"></div>
+      <div class="striped stripy2"></div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
 
-        <hr>
+        <a class="navbar-brand" href="#"></a>
 
-        <h3>Skills</h3>
-        <table cellspacing="10">
-        	<tr>
-        		<td>HTML5</td>
-        		<td>★★★★★</td>
-        		<td>PHP</td>
-        		<td>★★★★☆</td>
-        	</tr>
-        	<tr>
-        		<td>CSS3</td>
-        		<td>★★★★☆</td>
-        		<td>Laravel</td>
-        		<td>★★★★☆</td>
-        	</tr>
-        	<tr>
-        		<td>Java</td>
-        		<td>★★★☆☆</td>
-        		<td>C#</td>
-        		<td>★★★☆☆</td>
-        	</tr>
-        </table>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <hr>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                <li><a class="dropdown-item" href="#hobbies">Extra Curriculars</a></li>
+                <li><a class="dropdown-item" href="#references">References</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#contact">Contact Details</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</nav>
 
-        <h3>Hobbies & Interests</h3>
-        <ol type="i">
-        	<li>Graphic Design</li>
-        	<li>Photography</li>
-        	<li>Scrapbooking</li>
-        	<li><a href="https://github.com/Fothers23?tab=repositories">Web Development</a></li>
-        </ol>
+<div class="row">
+    <!-- Title -->
+    <div class="col-lg-6">
+      <h1 class="title-heading">Emily Fothergill</h1>
+      <div class="striped stripy1"></div>
+      <div class="blobby blob1"></div>
+  </div>
+  <div class="col-lg-6">
+    <h4 class="tagline">Web Developer</h4>
+    
+</div>
+</div>
+</div>
+</section>
+<!------------------------------------------- Bio section ----------------------------------------------> 
+<section id="bio" class="coloured"> 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="striped stripy4"></div>
+                <div class="blobby blob4"></div>
+                <img class="profile-pic" src="images/profile.JPG" alt="Picture of Emily Fothergill">
+                <div class="blobby blob5"></div>
+            </div>
+            <div class="col-lg-6 right-col">
+                <h3 class="left-heading">Meet Emily</h3>
+                <hr>
+                <p class="right-para">Professional, organised and self-motivated, Emily is a First Class (Hons) Computer Science graduate with a wide range of software development skills under her belt.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <hr>
+<!---------------------------------- Skills section ---------------------------------------------------> 
+<section id="skills" class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 left-col">
+                <h3>Skills</h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 left-col">
 
-        <a href="contact-details.html">Contact Details</a>
+                <div class="row">
+                    <div class="col-lg-12 skills-chart">
+                        <label class="prog-label first-label" for="OOP">OOP</label>
+                        <div id="OOP" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                            <div class="progress-bar progress-bar-striped pb2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Java</div>
+                            <div class="progress-bar progress-bar-striped pb3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">C#</div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                        </div>
+                        <label class="prog-label" for="OOP">Frameworks</label>
+                        <div id="frameworks" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Laravel</div>
+                            <div class="progress-bar progress-bar-striped pb2" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">.NET</div>
+                        </div>
+                        <label class="prog-label" for="OOP">Front-End</label>
+                        <div id="frontend" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">HTML5</div>
+                            <div class="progress-bar progress-bar-striped pb2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">CSS3</div>
+                        </div>
+                        <label for="git" class="prog-label">Version Control</label>
+                        <div id="git" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Git</div>
+                        </div>
+                        <label for="SQL" class="prog-label">DB Querying</label>
+                        <div id="SQL" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                        </div>
+                        <label for="adobe" class="prog-label">Adobe</label>
+                        <div id="adobe" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+                            <div class="progress-bar progress-bar-striped pb2" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">InDesign</div>
+                            <div class="progress-bar progress-bar-striped pb3" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Illustrator</div>
+                        </div>
+                        <label for="MSOffice" class="prog-label">MS Office</label>
+                        <div id="MSOffice" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Word</div>
+                            <div class="progress-bar progress-bar-striped pb2" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">PowerPoint</div>
+                            <div class="progress-bar progress-bar-striped pb3" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">ExCel</div>
+                        </div>
+                        <label for="soft" class="prog-label">Interpersonal</label>
+                        <div id="soft" class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Communication</div>
+                            <div class="progress-bar progress-bar-striped pb2" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Customer Service</div>
+                            <div class="progress-bar progress-bar-striped pb3" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Teamwork</div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-lg-3">
+                <div class="striped stripy3"></div>
+                <div class="blobby blob3"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------------------------------- Experience section ------------------------------------------> 
+<section id="experience" class="coloured">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 left-col">
+                <h3>Experience</h3>
+                <hr>
+            </div>
+            <div class="col-lg-6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 left-col">
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <p class="summary">Cliniconex UK, Newport <span class="job-title">- Head of UK Technical Support</span></p>
+                        <p class="dates">AUGUST 2020 - PRESENT</p>
+                    </div>
+                    <div class="exp-item">
+                        <p class="summary">Alacrity Foundation, Newport <span class="job-title">- Technical Lead</span></p>
+                        <p class="dates">SEPTEMBER 2019 - NOVEMBER 2020</p>
+                    </div>
+                    <div class="exp-item">
+                        <p class="summary">Primark, Newport/Swansea <span class="job-title">- Retail Operative</span></p>
+                        <p class="dates">OCTOBER 2015 - JANUARY 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------------------------------- Education section ------------------------------------------> 
+<section id="education">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 left-col">
+                <h3>Education</h3>
+                <hr>
+            </div>
+            <div class="col-lg-6">
 
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 left-col">
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <p class="summary">Shaw Academy <span class="job-title">- EQF Level 5 Graphic Design</span></p>
+                        <p class="dates">JULY 2020 - SEPTEMBER 2020</p>
+                    </div>
+                    <div class="exp-item">
+                        <p class="summary">Swansea University,  Swansea <span class="job-title">- BSc (Hons) Computer Science</span></p>
+                        <p class="dates">SEPTEMBER 2019 - NOVEMBER 2020</p>
+                    </div>
+                    <div class="exp-item">
+                        <p class="summary">St Julian's Comprehensive School,  Newport <span class="job-title">- GCSEs & A-Levels</span></p>
+                        <p class="dates">SEPTEMBER 2009 - JULY 2016</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+</div>
+</section>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+<!---------------------------------- Projects section ------------------------------------------> 
+<section id="projects" class="coloured section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 left-col">
+                <h3>Projects</h3>
+                <hr>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+        </div>
+        <div class="row proj-sums">
+            <div class="col-lg-4 left-trio">
+                <a href="https://github.com/Fothers23/supasuit" target="_blank" class="summary proj-link">Supasuit</a>
+                <p>A cosplay website built using PHP, HTML, CSS, Bootstrap and Laravel.</p>
+            </div>
+            <div class="col-lg-4">
+                <a href="https://github.com/Fothers23/3rd-Year-Project." target="_blank" class="summary proj-link">3rd Year Project</a>
+                <p>A game review website based on crowdsourcing; built using C#, HTML, CSS, JavaScript and .NET.</p>
+            </div>
+            <div class="col-lg-4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------- Hobbies section ------------------------------------------> 
+<section id="hobbies" class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 left-col">
+                <h3>Extra Curricular Activities</h3>
+                <hr>
+            </div>
+            <div class="col-lg-6">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 left-side">
+                <div class="exp-list">
+                    <div class="exp-item">
+                        <p class="summary">Tolkien Appreciation Society, Swansea University <span class="job-title">- President</span></p>
+                        <p class="dates">SEPTEMBER 2018 - FEBRUARY 2019</p>
+                    </div>
+                    <div class="exp-item">
+                        <p class="summary">Tolkien Appreciation Society, Swansea University <span class="job-title">- Social Secretary</span></p>
+                        <p class="dates">JULY 2017 - MAY 2018</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-2">
+                <i class="hobby-icon fas fa-pencil-ruler"></i>
+                <p class="hobby summary">Graphic Design</p>
+                <br>
+                <i class="hobby-icon fab fa-playstation"></i>
+                <p class="hobby summary">Video Gaming</p>
+            </div>
+            <div class="col-lg-2">
+                <i class="hobby-icon fas fa-camera"></i>
+                <p class="hobby summary">Photography</p>
+            </div>
+            <div class="col-lg-2">
+                <i class="hobby-icon fas fa-swatchbook"></i>
+                <p class="hobby summary">Scrapbooking</p>
+            </div>
+        </div>
+</div>
+</section>
+
+<!---------------------------------- References section ------------------------------------------> 
+<section id="references" class="coloured section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 left-col">
+                <h3>Testimonials</h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row testimonials">
+            <div class="col-lg-4">
+                <img src="images/wil.jpg" alt="Dr Wil Williams" class="ref-img">
+                <h4 class="ref">Dr. Wil Williams</h4>
+                <h5>CEO of the Alacrity Foundation</h5>
+                <p>"One of the stars of the programme. Quiet, but always working. Brilliant analyst."</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="images/james.jpg" alt="James Lewis" class="ref-img">
+                <h4 class="ref">James Lewis</h4>
+                <h5>Head of Programme of Alacrity Foundation</h5>
+                <p>"I can remember seeing your final year project at Swansea and thinking to myself, wow that girl has got some talent. I was right. But the amazing thing is how you have used that talent on our programme and also developed many more skills."</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="images/caroline.jpg" alt="Caroline Thompson" class="ref-img">
+                <h4 class="ref">Caroline Thompson</h4>
+                <h5>Head of Partnerships of Alacrity Foundation</h5>
+                <p>"Your work ethic shines through ★"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------- Contact details section ------------------------------------------> 
+<section id="contact" class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="striped stripy4"></div>
+                <div class="blobby blob4"></div>
+                <img class="picture" src="images/exit.JPG" alt="Picture of Emily Fothergill">
+                <div class="blobby blob5"></div>
+            </div>
+            <div class="col-lg-6 right-col">
+                <h3 class="left-heading">Contact Details</h3>
+                <hr>
+                <i class="fas fa-home contact-icon"></i>
+                <p class="contact-det">Home Address: <span class="contact-info">Newport</span></p>
+                <br>
+                <i class="fas fa-envelope contact-icon"></i>
+                <p class="contact-det">Email Address: <span class="contact-info">emily@cliniconex.com</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------------------------------- Footer section ------------------------------------------> 
+<section id="footer">
+    <div class="container-fluid">
+        <a href="https://www.linkedin.com/in/emily-fothergill-a18964158/" target="_blank" class="socials"><i class=" fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+</body>
 </html>

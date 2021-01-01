@@ -1,27 +1,338 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: #e4f9f5;
-	font-family: 'Montserrat', sans-serif;
+	background-color: #F1F1F2;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #150941;
+	width:100%;
+    overflow-x:hidden;
 }
 
 hr {
-	border-style: none;
-	border-top-style: dotted;
-	border-color: #30e3ca;
-	border-width: 5px;
-	width: 10%;
-}
-
-h1 {
-	color: #40514e;
-	font-family: 'Oswald', sans-serif;
+	border: 2px solid #150941;
+	border-radius: 5px;
 }
 
 h3 {
-	color: #11999e;
-	font-family: 'Open Sans', sans-serif;
+	color: #150941;
+	font-family: 'Spartan', sans-serif;
+	font-weight: 700;
+	margin: 10% 10% 5%;
+	text-transform: uppercase;
 }
 
-#profile-pic {
+.left-heading {
+	margin: 10% 0 5%;
+}
+
+.coloured {
+	background-color: #a7d7db;
+}
+
+.right-para {
+	margin-top: 5%;
+	margin-right: 8%;
+}
+
+.blobby {
 	border-radius: 50%;
+	background-image: linear-gradient(to bottom right, #04B2C2, #150941);
+	position: absolute;
+}
+
+.striped { 
+	border-radius: 50%;
+	position: absolute;
+}
+
+.right-col {
+	padding-right: 0;
+}
+
+.left-col {
+	padding-left: 0;
+}
+
+.left-side {
+	padding-left: 2.6%;
+}
+
+.left-trio {
+	padding-left: 1.4%;
+}
+
+.section {
+	padding-bottom: 2%;
+}
+
+/*********************************** Titles section **************************************/
+
+#title {
+	background-color: #150941;
+	overflow: hidden;
+	height: 40rem; 
+}
+
+.title-heading {
+	color: #04B2C2;
+	font-family: 'Spartan', sans-serif;
+	font-weight: 900;
+	font-size: 60pt;
+	margin: 18% 10% 25%;
+}
+
+.tagline {
+	color: #F1F1F2;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	position: absolute;
+	bottom: 0.5rem;
+	right: 5rem;
+	margin-right: 1%;
+}
+
+.stripy1 {
+	height: 110%;
+	width: 100%;
+	top: 80%;
+	background: repeating-linear-gradient(85deg, #04B2C2, #03838F 10px, transparent 10px, transparent 20px);
+}
+
+.stripy2 {
+	height: 110%;
+	width: 90%;
+	bottom: 80%;
+	background: repeating-linear-gradient(-45deg, #04B2C2, #03838F 10px, transparent 10px, transparent 20px);
+}
+
+.blob1 {
+	height: 80%;
+	width: 70%;
+	left: -10%;
+	top: 65%;
+}
+
+.blob2 {
+	height: 80%;
+	width: 60%;
+	right: 0%;
+	bottom: 65%;
+}
+
+/************************************** Bio section **************************************/
+#bio {
+	padding: 10% 0;
+	overflow: hidden;
+}
+
+.profile-pic {
+	height: 290px;
+	border-radius: 50%;
+	margin: 0% 25%;
+}
+
+.stripy4 {
+	height: 50px;
+	width: 50px;
+	left: 10%;
+	background: repeating-linear-gradient(-35deg, #150941, #03838F 10px, transparent 10px, transparent 15px);
+}
+
+.blob4 {
+	height: 20rem;
+	width: 20rem;
+	left: -10%;
+	top:-7%;
+}
+
+.blob5 {
+	height: 5rem;
+	width: 5rem;
+	left: 65%;
+	top: 1%;
+}
+
+.stripy4 {
+	height: 22rem;
+	width: 22rem;
+	left: -10%;
+	top: 9%;
+	background: repeating-linear-gradient(-45deg, #04B2C2, #03838F 10px, transparent 10px, transparent 20px);
+}
+
+/************************************** Skills section **************************************/
+
+#skills {
+	overflow: hidden;
+}
+
+.progress {
+	margin: 2% 0;
+	margin-left: 10%;
+	height: 2rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.progress-bar {
+	background-color: #04B2C2;
+	text-align: left;
+	padding: 0 1%;
+}
+
+.pb2 {
+	background-color: #013D42;
+}
+
+.pb3 {
+	background-color: #03838F;
+}
+
+.prog-label {
+	float: left;
+	margin-right: 1%;
+}
+
+.stripy3 {
+	height: 70%;
+	width: 80%;
+	top: 35%;
+	right: -30%;
+	background: repeating-linear-gradient(-35deg, #150941, #03838F 10px, transparent 10px, transparent 20px);
+}
+
+.blob3 {
 	height: 60%;
+	width: 70%;
+	right: -40%;
+}
+
+.skills-chart {
+	margin-left: 6.5%;
+}
+
+.first-label {
+	margin-top: 2%;
+}
+
+/************************************** Experience section **************************************/
+#experience {
+	overflow: hidden;
+}
+
+.exp-list {
+	margin: 3% 5%;
+}
+
+.exp-item {
+	margin-bottom: 5%; 
+}
+
+.summary {
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.job-title {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.dates {
+	font-weight: 300;
+	font-size: 0.8rem;
+	line-height: 0.5rem;
+}
+
+/************************************** Education section **************************************/
+
+/************************************** Projects section **************************************/
+
+.proj-sums {
+	margin: 3%;
+}
+
+.proj-link {
+	color: #150941;
+}
+
+.proj-link:hover {
+	color: #F1F1F2;
+	text-decoration: none;
+}
+
+/************************************** Hobbies section **************************************/
+
+.hobby-icon {
+	margin: 10% 5% 1% 2%;
+	font-size: 3rem;
+	color: #A7D7DB;
+	background-color: #03838F;
+	padding: 1rem 1.5rem;
+	border-radius: 30%;
+	float: left;
+}
+
+.hobby {
+	margin: 24% 0 11%;
+}
+
+/************************************** References section **************************************/
+.testimonials {
+	text-align: center;
+}
+
+.ref-img {
+	border-radius: 50% 50%;
+	margin: 5% 0;
+}
+
+.ref {
+	font-family: 'Spartan', sans-serif;
+	font-weight: 700;
+}
+
+/************************************** Contact Details section **************************************/
+#contact {
+	padding: 7% 0;
+}
+
+.contact-icon {
+	font-size: 3rem;
+	float: left;
+	margin: 1% 5% 0 0;
+}
+
+.picture {
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+	object-position: 100% 0;
+	margin: 0 25%;
+}
+
+.contact-det {
+	margin-top: 5%;
+	font-weight: 700;
+}
+
+.contact-info {
+	font-weight: 400;
+}
+
+/************************************** Footer section **************************************/
+#footer {
+	background-color: #3C4445;
+	text-align: center;
+	padding: 1%;
+	color: #F1F1F2;
+}
+
+.socials {
+	font-size: 2rem;
+	color: inherit;
 }
