@@ -13,26 +13,25 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Spartan:wght@200;400;700;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
 
-    <!-- Bootstrap Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
 
 </head>
 <body>
   <section id="title">
     <div class="container-fluid">
       <!-- Nav Bar -->
-      <div class="blobby blob2"></div>
-      <div class="striped stripy2"></div>
       <nav class="navbar navbar-expand-lg navbar-dark">
 
         <a class="navbar-brand" href="#"></a>
@@ -53,15 +52,15 @@
             <a class="nav-link" href="#education">Education</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#projects">Projects</a></li>
-                <li><a class="dropdown-item" href="#hobbies">Extra Curriculars</a></li>
-                <li><a class="dropdown-item" href="#references">References</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#contact">Contact Details</a></li>
-            </ul>
-        </li>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#projects">Projects</a>
+              <a class="dropdown-item" href="#hobbies">Extra Curriculars</a>
+              <a class="dropdown-item" href="#references">Testimonials</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#contact">Contact Details</a>
+            </div>
+          </li>
     </ul>
 </div>
 </nav>
@@ -70,11 +69,10 @@
     <!-- Title -->
     <div class="col-lg-6">
       <h1 class="title-heading">Emily Fothergill</h1>
-      <div class="striped stripy1"></div>
-      <div class="blobby blob1"></div>
+      <h2 class="tagline">Web Developer</h2>
   </div>
   <div class="col-lg-6">
-    <h4 class="tagline">Web Developer</h4>
+   
     
 </div>
 </div>
@@ -85,13 +83,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
-                <div class="striped stripy4"></div>
-                <div class="blobby blob4"></div>
                 <img class="profile-pic" src="images/profile.JPG" alt="Picture of Emily Fothergill">
-                <div class="blobby blob5"></div>
             </div>
             <div class="col-lg-6 right-col">
-                <h3 class="left-heading">Meet Emily</h3>
+                <h2 class="section-heading left-heading">Meet Emily</h2>
                 <hr>
                 <p class="right-para">Professional, organised and self-motivated, Emily is a First Class (Hons) Computer Science graduate with a wide range of software development skills under her belt.</p>
             </div>
@@ -104,7 +99,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 left-col">
-                <h3>Skills</h3>
+                <h2 class="section-heading">Skills</h2>
                 <hr>
             </div>
         </div>
@@ -160,8 +155,6 @@
                 </div>                
             </div>
             <div class="col-lg-3">
-                <div class="striped stripy3"></div>
-                <div class="blobby blob3"></div>
             </div>
         </div>
     </div>
@@ -171,7 +164,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 left-col">
-                <h3>Experience</h3>
+                <h2 class="section-heading">Experience</h2>
                 <hr>
             </div>
             <div class="col-lg-6">
@@ -202,7 +195,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 left-col">
-                <h3>Education</h3>
+                <h2 class="section-heading">Education</h2>
                 <hr>
             </div>
             <div class="col-lg-6">
@@ -235,7 +228,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 left-col">
-                <h3>Projects</h3>
+                <h2 class="section-heading">Projects</h2>
                 <hr>
             </div>
             <div class="col-lg-6">
@@ -262,7 +255,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 left-col">
-                <h3>Extra Curricular Activities</h3>
+                <h2 class="section-heading">Extra Curricular Activities</h2>
                 <hr>
             </div>
             <div class="col-lg-6">
@@ -306,7 +299,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 left-col">
-                <h3>Testimonials</h3>
+                <h2 class="section-heading">Testimonials</h2>
                 <hr>
             </div>
         </div>
@@ -338,13 +331,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
-                <div class="striped stripy4"></div>
-                <div class="blobby blob4"></div>
                 <img class="picture" src="images/exit.JPG" alt="Picture of Emily Fothergill">
-                <div class="blobby blob5"></div>
             </div>
             <div class="col-lg-6 right-col">
-                <h3 class="left-heading">Contact Details</h3>
+                <h2 class="section-heading left-heading">Contact Details</h2>
                 <hr>
                 <i class="fas fa-home contact-icon"></i>
                 <p class="contact-det">Home Address: <span class="contact-info">Newport</span></p>
@@ -363,5 +353,9 @@
     </div>
 </section>
 
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
