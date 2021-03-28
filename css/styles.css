@@ -6,20 +6,20 @@
 body {
 	background-color: #F1F1F2;
 	font-family: 'Roboto Condensed', sans-serif;
-	color: #150941;
+	color: #254e70;
 	width:100%;
     overflow-x:hidden;
 }
 
 hr {
-	border: 2px solid #150941;
+	border: 2px solid #254e70;
 	border-radius: 5px;
 }
 
 .section-heading {
-	color: #150941;
+	color: #254e70;
 	font-family: 'Righteous', cursive;
-	margin: 10% 10% 5%;
+	margin: 12% 10% 5%;
 	text-transform: uppercase;
 	font-size: 2.5vw;
 }
@@ -49,12 +49,13 @@ hr {
 	padding-left: 2.6%;
 }
 
-.left-trio {
-	padding-left: 1.4%;
-}
-
 .section {
 	padding-bottom: 2%;
+}
+
+.content {
+	margin-left: 5%;
+	margin-top: 2%;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -97,102 +98,259 @@ hr {
 
 /************************************** Bio section **************************************/
 #bio {
-	padding: 15% 0;
+	padding: 12% 0 10%;
 	overflow: hidden;
 }
 
 .profile-pic {
-	height: 290px;
+	width: 25vw;
 	border-radius: 50%;
-	margin: 0% 25%;
+	margin: 0 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /************************************** Skills section **************************************/
 
 #skills {
-	overflow: hidden;
+	padding-bottom: 5%;
 }
 
-.progress {
-	margin: 2% 0;
-	margin-left: 10%;
-	height: 2rem;
-	font-size: 1.5rem;
-	font-weight: 700;
+.skills-row {
+	margin: 3% 3% 3% 2%;
 }
 
-.progress-bar {
-	background-color: #04B2C2;
-	text-align: left;
-	padding: 0 1%;
+.skill-bar {
+	background-color: #C33C54 !important;
+
 }
 
-.pb2 {
-	background-color: #013D42;
+.skill-link {
+	border: 1px solid #e1e4e7;
+	margin: auto 15px;
+	color: #254e70 !important;
 }
 
-.pb3 {
-	background-color: #03838F;
+.skill-link.active {
+	background-color: #C33C54 !important;
+	border-color: #C33C54;
+	color: white !important;
 }
 
-.prog-label {
-	float: left;
-	margin-right: 1%;
+.percentage-label, .skill-label {
+	line-height: 1.5;
+	font-weight: 600;
 }
 
-.skills-chart {
-	margin-left: 6.5%;
+.skill-label {
+	color: #254e70;
 }
 
-.first-label {
-	margin-top: 2%;
+.text-dark {
+	color: #37718E !important;
+}
+
+.progress-box .progress .progress-value {
+    position: absolute;
+    top: -30px;
+    right: -15px;
+    font-size: 13px;
+}
+
+.progress-box .progress {
+    height: 8px;
+    overflow: visible;
+}
+
+.progress-box .progress .progress-bar {
+    -webkit-animation: animate-positive 3s !important;
+    animation: animate-positive 3s !important;
+    overflow: visible !important;
+    border-radius: 5px;
 }
 
 /************************************** Experience section **************************************/
 #experience {
-	overflow: hidden;
+	padding-bottom: 5%;
 }
 
-.exp-list {
-	margin: 3% 5%;
+.exp-row {
+	margin: 1% 3% 0 3%;
 }
 
-.exp-item {
-	margin-bottom: 5%; 
+@media (min-width: 768px) {
+	.main-icon {
+		margin: 0 auto;
+	}
 }
 
-.summary {
-	font-weight: 700;
-	font-size: 1.2rem;
+.main-icon {
+    border: 2px solid #e9ecef;
+    height: 40px;
+    width: 40px;
+    line-height: 0;
+    text-align: center;
 }
 
-.job-title {
-	font-weight: 700;
-	font-style: italic;
+.rounded-pill {
+    border-radius: 30px !important;
 }
 
-.dates {
-	font-weight: 300;
-	font-size: 0.8rem;
-	line-height: 0.5rem;
+.fea.icon-md-sm {
+    height: 24px;
+    width: 24px;
+	color: #C33C54;
 }
 
+.fea {
+    stroke-width: 1.6;
+}
+
+.timeline-page .timeline-item .date-label-left {
+    float: right;
+    margin-right: 15px;
+	
+}
+
+.timeline-page .timeline-item .date-label-left, .timeline-page .timeline-item .duration-right {
+    margin-right: 15px;
+	background-color: #e9ecef;
+}
+
+.timeline-page .timeline-item .event.event-description-left {
+    text-align: right;
+    margin-right: 15px;
+	background-color: #e9ecef;
+}
+
+.timeline-page .timeline-item .event {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+	background-color: #e9ecef;
+}
+
+.timeline-page .timeline-item .event:hover {
+    -webkit-box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    border-color: transparent !important;
+}
+
+.timeline-page .timeline-item .duration-right {
+    float: left;
+    margin-left: 15px;
+}
+
+.timeline-page .timeline-item .date-label-left:after {
+    right: -37px;
+}
+
+.timeline-page .timeline-item .duration-right:after {
+    left: -37px;
+}
+
+.timeline-page .timeline-item .date-label-left:after, .timeline-page .timeline-item .duration-right:after {
+    border: 2px solid #C33C54;
+    content: "";
+    position: absolute;
+    top: 12px;
+    width: 12px;
+    height: 12px;
+    z-index: 1;
+    background-color: #f8f9fa;
+    border-radius: 30px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 0 3px rgb(60 72 88 / 15%) !important;
+    box-shadow: 0 0 3px rgb(60 72 88 / 15%) !important;
+}
+
+.border {
+    border: 1px solid #e9ecef !important;
+}
+
+.rounded {
+    border-radius: 7px !important;
+}
+
+.timeline-page:after {
+    background-color: #e9ecef !important;
+    content: "";
+    height: 95%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+}
 /************************************** Education section **************************************/
+#education {
+	padding-bottom: 5%;
+}
 
 /************************************** Projects section **************************************/
 
 .proj-sums {
-	margin: 3%;
+	margin: 2% 3% 8% 3%;
 }
 
 .proj-link {
-	color: #150941;
+	color: white;
 }
 
 .proj-link:hover {
-	color: #F1F1F2;
+	color: #e9ecef;
 	text-decoration: none;
 }
+
+.proj-card {
+	position: relative;
+	width: 100%;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .proj-img {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	border-radius: 5px;
+  }
+
+  .proj-card .proj-img {
+	max-height: 40vh;
+	object-fit: cover;
+  }
+  
+  .overlay {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .proj-card:hover .overlay {
+	opacity: 1;
+  }
+
+  .proj-card:hover .proj-img {
+	opacity: 0.3;
+  }
+  
+  .proj-text {
+	background-color: #C33C54;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }
 
 /************************************** Hobbies section **************************************/
 
