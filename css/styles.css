@@ -8,7 +8,7 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #254e70;
 	width:100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 hr {
@@ -58,6 +58,10 @@ hr {
 	margin-top: 2%;
 }
 
+.img-container {
+	text-align: center;
+}
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
 	position: fixed;
@@ -105,8 +109,11 @@ hr {
 .profile-pic {
 	width: 25vw;
 	border-radius: 50%;
-	margin: 0 20%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-para {
+	margin-right: 7%;
 }
 
 /************************************** Skills section **************************************/
@@ -354,23 +361,52 @@ hr {
 
 /************************************** Hobbies section **************************************/
 
-.hobby-icon {
-	margin: 10% 5% 1% 2%;
-	font-size: 3rem;
-	color: #A7D7DB;
-	background-color: #03838F;
-	padding: 1rem 1.5rem;
-	border-radius: 30%;
-	float: left;
+.hobbies-row {
+	margin: 2% 3% 6% 3%;
 }
 
-.hobby {
-	margin: 24% 0 11%;
+.interests-desc .title {
+    font-weight: 500;
+}
+
+.interests-desc {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.bg-light {
+    background-color: #f9fafd !important;
+}
+
+.interests-desc .hobbies:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 55px;
+    background: #e9ecef;
+    z-index: 1;
+}
+
+.interests-desc .icon {
+    width: 40px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.interests-desc:hover {
+	-webkit-box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    border-color: transparent !important;
 }
 
 /************************************** References section **************************************/
 .testimonials {
 	text-align: center;
+	margin: 2% 0;
 }
 
 .ref-img {
@@ -397,11 +433,11 @@ hr {
 
 .picture {
 	border-radius: 50%;
-	height: 300px;
-	width: 300px;
+	border: none;
+	height: 18.75rem;
+	width: 18.75rem;
 	object-fit: cover;
 	object-position: 100% 0;
-	margin: 0 25%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -425,4 +461,5 @@ hr {
 .socials {
 	font-size: 2rem;
 	color: inherit;
+	margin: 0 0.5rem;
 }
