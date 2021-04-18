@@ -454,16 +454,20 @@ hr {
 	font-weight: 400;
 }
 
+.socials {
+	font-size: 3rem;
+	color: inherit;
+	margin: 0 1rem;
+}
+
+.socials:hover {
+	color: #C33C54;
+}
+
 /************************************** Footer section **************************************/
 #footer {
 	background-color: #3C4445;
-	text-align: center;
 	padding: 1%;
-	color: #F1F1F2;
+	color: #e7e7e7;
 }
 
-.socials {
-	font-size: 2rem;
-	color: inherit;
-	margin: 0 0.5rem;
-}
