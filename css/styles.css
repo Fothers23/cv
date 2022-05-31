@@ -3,6 +3,45 @@
 	padding: 0;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	h1 {
+		font-size: 6vh;
+	}
+
+	h2 {
+		font-size: 2.5vh;
+	}
+
+	.subheading {
+		font-size: 4vh;
+	}
+
+	h3 {
+		font-size: 1.8vh;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+	h1 {
+		font-size: 6vw;
+	}
+
+	h2 {
+		font-size: 2.5vw;
+	}
+
+	.subheading {
+		font-size: 4vw;
+	}
+
+	h3 {
+		font-size: 1.8vw;
+	}
+}
+
+
 body {
 	background-color: #F1F1F2;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -21,7 +60,6 @@ hr {
 	font-family: 'Righteous', cursive;
 	margin: 12% 10% 5%;
 	text-transform: uppercase;
-	font-size: 2.5vw;
 }
 
 .left-heading {
@@ -50,11 +88,11 @@ hr {
 }
 
 .section {
-	padding-bottom: 2%;
+	padding-bottom: 1%;
 }
 
 .content {
-	margin-left: 5%;
+	margin-left: 10%;
 	margin-top: 2%;
 }
 
@@ -82,18 +120,17 @@ hr {
 #title {
 	background-color: #254e70;
 	overflow: hidden;
-	height: 47.5rem; 
+	height: 100vh; 
 	background-image: url('../images/graduation.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center 25%;
+	background-position: 35% center;
 	box-shadow:inset 0 0 0 2000px rgba(37, 78, 112, 0.75);
 }
 
 .title-heading {
 	color: #AEF3E7;
 	font-family: 'Righteous', cursive;
-	font-size: 60pt;
 	margin: 18% 10% 5%;
 }
 
@@ -102,6 +139,7 @@ hr {
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	margin: 0 10% 25%;
+	
 }
 
 /************************************** Bio section **************************************/
@@ -111,7 +149,7 @@ hr {
 }
 
 .profile-pic {
-	width: 25vw;
+	width: 18rem;
 	border-radius: 50%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -126,6 +164,26 @@ hr {
 	padding-bottom: 5%;
 }
 
+.skill-block {
+	margin: 0 0 0.5rem 0.5rem;
+	width: 10rem;
+	text-align: center;
+}
+
+.skill-block:hover {
+    -webkit-box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    box-shadow: 0 10px 25px rgb(60 72 88 / 15%);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    border-color: transparent !important;
+}
+
+.card-img-top {
+	margin-top: 15%;
+	font-size: 5rem;
+	color: #C33C54;
+}
+
 .skills-row {
 	margin: 3% 3% 3% 2%;
 }
@@ -133,6 +191,10 @@ hr {
 .skill-bar {
 	background-color: #C33C54 !important;
 
+}
+
+.nav {
+	margin-bottom: 5%;
 }
 
 .skill-link {
@@ -304,7 +366,7 @@ hr {
 /************************************** Projects section **************************************/
 
 .proj-sums {
-	margin: 2% 3% 8% 3%;
+	margin: 2% 3%;
 }
 
 .proj-link {
@@ -317,27 +379,23 @@ hr {
 }
 
 .proj-card {
-	position: relative;
-	width: 100%;
 	border: none;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-bottom: 3%;
+	margin: 0 0 3% 3%;
   }
   
   .proj-img {
 	opacity: 1;
-	display: block;
-	width: 100%;
 	transition: .5s ease;
 	backface-visibility: hidden;
 	border-radius: 5px;
   }
 
   .proj-card .proj-img {
-	max-height: 40vh;
+	height: 15rem;
 	object-fit: cover;
   }
-  
+
   .overlay {
 	transition: .5s ease;
 	opacity: 0;
@@ -361,7 +419,7 @@ hr {
 	background-color: #C33C54;
 	color: white;
 	font-size: 16px;
-	padding: 16px 32px;
+	padding: 16px 1px;
   }
 
 /************************************** Hobbies section **************************************/
